@@ -51,7 +51,7 @@ i.quote-mark-right {
 }
 i.quote-mark-left {
   position: absolute;
-  top: 63%;
+  top: 65%;
   left: 76%;
 }
 .quote {
@@ -73,29 +73,29 @@ button {
   border-radius: 20px;
 }
 button:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(107, 7, 7, 0.3);
 }
 
 button.previous {
-  background: linear-gradient(90deg, #9534ad, #db66b4);
-  color: #fae4f9;
+  background-color: rgb(124, 7, 32);
+  color: #efc6c6;
 }
 button.previous:hover {
-  background: rgb(98, 6, 129);
+  background: rgba(124, 7, 32, 0.8);
 }
 button.random {
-  background: linear-gradient(90deg, #3922ba, #2c6a94);
-  color: #d9edfa;
+  background-color: rgb(6, 6, 117);
+  color: #c7deed;
 }
 button.random:hover {
-  background: rgb(16, 16, 126);
+  background: rgb(6, 6, 117, 0.8);
 }
 button.next {
-  background: linear-gradient(90deg, #9534ad, #db66b4);
+  background-color: rgb(124, 7, 32);
   color: #fae4f9;
 }
 button.next:hover {
-  background: rgb(98, 6, 129);
+  background: rgba(124, 7, 32, 0.8);
 }
 
 .category-font {
@@ -135,8 +135,8 @@ input[type="range"] {
 .darkmode-toggle {
   background-color: #fff;
 
-  width: 8em;
-  height: 4em;
+  width: 6em;
+  height: 3em;
   border-radius: 10em;
   padding: 0 0.5em;
 
@@ -144,7 +144,7 @@ input[type="range"] {
 
   position: absolute;
   top: 4%;
-  right: 8%;
+  right: 4%;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -152,8 +152,8 @@ input[type="range"] {
 
 .darkmode-indicator {
   background-color: #fff;
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
 
   position: absolute;
@@ -205,7 +205,7 @@ body.darkmode {
 }
 
 .darkmode .darkmode-indicator {
-  transform: translateX(5em);
+  transform: translateX(3.6em);
   background-color: var(--dark-color);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
 }
@@ -228,7 +228,7 @@ body.darkmode {
     margin-bottom: 20px;
     height: 240px;
     width: 95%;
-    box-shadow: 6px 6px 15px rgb(98, 98, 98);
+    box-shadow: 4px 4px 15px rgb(98, 98, 98);
   }
 
   i.quote-mark-right {
@@ -239,7 +239,7 @@ body.darkmode {
   i.quote-mark-left {
     position: absolute;
     top: 60%;
-    left: 87%;
+    left: 88%;
   }
   .quote {
     font-size: 25px;
@@ -247,7 +247,7 @@ body.darkmode {
   }
 
   button {
-    padding: 6px 8px;
+    padding: 7px 9px;
     font-size: 15px;
   }
 
@@ -269,22 +269,22 @@ body.darkmode {
 
   /* dark mode */
   .darkmode-toggle {
-    width: 6em;
-    height: 3em;
+    width: 3.6em;
+    height: 2em;
   }
 
   .darkmode-indicator {
     background-color: #fff;
-    width: 2.5em;
-    height: 2.5em;
+    width: 1.7em;
+    height: 1.7em;
   }
 
   .darkmode-icon {
     color: var(--light-icon-color);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .darkmode .darkmode-indicator {
-    transform: translateX(3.5em);
+    transform: translateX(2.1em);
   }
 }
