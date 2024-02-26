@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Quote Generator</h3>
+      <div class="quote-container" id="quoteContainer">
+        <p class="quote" id="quoteText">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id
+          doloremque ab voluptatum, accusantium corrupti!
+        </p>
+      </div>
+      <div class="controls">
+        <button>Previous</button>
+        <button>Random</button>
+        <button>Next</button>
+      </div>
+      <div class="category-font">
+        <span class="category">
+          <span>Category:</span>
+          <select id="categorySelector">
+            <option value="science">Mathematics</option>
+            <option value="inspirational">Inspirational</option>
+          </select>
+        </span>
+        <span class="font-size">
+          <label for="fontSize">Font Size:</label>
+          <input
+            type="range"
+            id="fontSize"
+            min="14"
+            max="35"
+            value="18"
+            onchange="changeFontSize()"
+          />
+        </span>
+      </div>
+    </div>
+  </body>
+</html>

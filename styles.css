@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&display=swap");
+body {
+  font-family: "Asap", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+}
+
+.quote-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  font-size: 1.2em;
+  font-family: "Caveat", cursive;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.category-font {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.category {
+}
+select {
+  padding: 8px;
+}
+
+.font-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.font-size label {
+  margin-right: 8px;
+}
+.font-size input {
+  margin-top: 14px;
+}
+input[type="range"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 50%;
+}
