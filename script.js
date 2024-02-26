@@ -11,9 +11,9 @@ const quotes = {
     "We cannot solve problems with the kind of thinking we employed when we came up with them.",
     "Learn as if you will live forever, live like you will die tomorrow.",
     "Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.",
+    "Success usually comes to those who are too busy to be looking for it.",
     "When you change your thoughts, remember to also change your world.",
     "Success is not final; failure is not fatal: It is the courage to continue that counts.",
-    "Success usually comes to those who are too busy to be looking for it.",
   ],
   fitness: [
     "We are what we repeatedly do. Excellence then is not an act but a habit.",

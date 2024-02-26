@@ -12,12 +12,13 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  width: 50%;
   text-align: center;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 40px;
+  font-style: italic;
 }
 .quote-container {
   background-color: #fff;
@@ -25,10 +26,23 @@ h3 {
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  width: 100%;
+  overflow: auto;
 }
 
+i.quote-mark-right {
+  position: absolute;
+  top: 33%;
+  left: 24.5%;
+}
+i.quote-mark-left {
+  position: absolute;
+  top: 63%;
+  left: 76%;
+}
 .quote {
-  font-size: 25px;
+  font-size: 32px;
   font-family: "Caveat", cursive;
 }
 
@@ -39,9 +53,35 @@ h3 {
 }
 
 button {
-  padding: 10px;
-  font-size: 1em;
+  padding: 12px 20px;
+  font-size: 16px;
   cursor: pointer;
+  border-radius: 20px;
+}
+button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button.previous {
+  background: linear-gradient(90deg, #9534ad, #db66b4);
+  color: #fae4f9;
+}
+button.previous:hover {
+  background: rgb(98, 6, 129);
+}
+button.random {
+  background: linear-gradient(90deg, #3922ba, #48a3df);
+  color: #d9edfa;
+}
+button.random:hover {
+  background: rgb(16, 16, 126);
+}
+button.next {
+  background: linear-gradient(90deg, #9534ad, #db66b4);
+  color: #fae4f9;
+}
+button.next:hover {
+  background: rgb(98, 6, 129);
 }
 
 .category-font {
@@ -50,7 +90,8 @@ button {
   align-items: center;
   margin-top: 20px;
 }
-.category {
+.category-text {
+  margin-right: 8px;
 }
 select {
   padding: 8px;
@@ -60,7 +101,6 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
 }
 .font-size label {
   margin-right: 8px;
