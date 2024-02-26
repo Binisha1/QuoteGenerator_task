@@ -16,16 +16,17 @@
         </p>
       </div>
       <div class="controls">
-        <button>Previous</button>
-        <button>Random</button>
-        <button>Next</button>
+        <button onclick="getPreviousQuote()">Previous</button>
+        <button onclick="getRandomQuote()">Random</button>
+        <button onclick="getNextQuote()">Next</button>
       </div>
       <div class="category-font">
         <span class="category">
           <span>Category:</span>
-          <select id="categorySelector">
-            <option value="science">Mathematics</option>
+          <select id="categorySelector" onchange="changeCategory()">
+            <option value="coding">Coding</option>
             <option value="inspirational">Inspirational</option>
+            <option value="fitness">Fitness</option>
           </select>
         </span>
         <span class="font-size">
@@ -33,13 +34,14 @@
           <input
             type="range"
             id="fontSize"
-            min="14"
+            min="16"
             max="35"
-            value="18"
+            value="24"
             onchange="changeFontSize()"
           />
         </span>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
