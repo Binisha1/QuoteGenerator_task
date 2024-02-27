@@ -1,37 +1,105 @@
 const quotes = {
   coding: [
-    "Coding like poetry should be short and concise",
-    "It’s not a bug; it’s an undocumented feature.",
-    "Make it work, make it right, make it fast.",
-    "Clean code always looks like it was written by someone who cares",
-    "There is always one more bug to fix",
-    "Computers are fast; developers keep them slow.",
+    {
+      text: "Coding like poetry should be short and concise.",
+      author: " Santosh Kalwar",
+    },
+    {
+      text: "It’s not a bug; it’s an undocumented feature.",
+      author: "Anonymous",
+    },
+    { text: "Make it work, make it right, make it fast.", author: "Kent Beck" },
+    {
+      text: "Clean code always looks like it was written by someone who cares.",
+      author: "Robert C. Martin",
+    },
+    {
+      text: "There is always one more bug to fix.",
+      author: "Ellen Ullman",
+    },
+    {
+      text: "Computers are fast; developers keep them slow.",
+      author: "Anonymous",
+    },
   ],
   inspirational: [
-    "We cannot solve problems with the kind of thinking we employed when we came up with them.",
-    "Learn as if you will live forever, live like you will die tomorrow.",
-    "Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.",
-    "Success usually comes to those who are too busy to be looking for it.",
-    "When you change your thoughts, remember to also change your world.",
-    "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+    {
+      text: "We cannot solve problems with the kind of thinking we employed when we came up with them.",
+      author: "Albert Einstein",
+    },
+    {
+      text: "Learn as if you will live forever, live like you will die tomorrow.",
+      author: "Mahatma Gandhi",
+    },
+    {
+      text: "Success usually comes to those who are too busy to be looking for it.",
+      author: "Henry David Thoreau",
+    },
+    {
+      text: "When you change your thoughts, remember to also change your world.",
+      author: "Norman Vincent Peale",
+    },
+    {
+      text: "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+      author: "Winston Churchill",
+    },
+    {
+      text: "I never dreamed about success. I worked for it.",
+      author: "Estée Lauder",
+    },
+    {
+      text: "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+      author: "Winston Churchill",
+    },
+    {
+      text: "Setting goals is the first step in turning the invisible into the visible.",
+      author: "Tony Robbins",
+    },
   ],
   fitness: [
-    "We are what we repeatedly do. Excellence then is not an act but a habit.",
-    "The body achieves what the mind believes.",
-    "The hard days are the best because that’s when champions are made, so if you push through, you can push through anything.",
-    "I hated every minute of training, but I said, ‘Don’t quit. Suffer now and live the rest of your life as a champion.",
-    "Push harder than yesterday if you want a different tomorrow.",
-    "The real workout starts when you want to stop.",
-    "Once you are exercising regularly, the hardest thing is to stop it.",
+    {
+      text: "We are what we repeatedly do. Excellence then is not an act but a habit.",
+      author: "Aristotele",
+    },
+    {
+      text: "The body achieves what the mind believes.",
+      author: "Napoleon Hill",
+    },
+    {
+      text: "Push harder than yesterday if you want a different tomorrow.",
+      author: "Vincent Williams Sr.",
+    },
+    {
+      text: "The real workout starts when you want to stop.",
+      author: " Ronnie Coleman",
+    },
+    {
+      text: "Once you are exercising regularly, the hardest thing is to stop it.",
+      author: " Erin Gray",
+    },
+    {
+      text: "The secret of getting ahead is getting started.",
+      author: "Mark Twain",
+    },
+    {
+      text: "All progress takes place outside the comfort zone.",
+      author: "Michael John Bobak",
+    },
+    {
+      text: "It’s hard to beat a person who never gives up.",
+      author: " Babe Ruth",
+    },
   ],
 };
 
 let currentCategory = "coding";
 let currentIndex = 0;
-let darkMode = false;
+
 function updateQuote() {
   const quoteText = document.getElementById("quoteText");
-  quoteText.textContent = quotes[currentCategory][currentIndex];
+  const authorText = document.getElementById("authorText");
+  quoteText.textContent = quotes[currentCategory][currentIndex].text;
+  authorText.textContent = `- ${quotes[currentCategory][currentIndex].author}`;
 }
 
 function getNextQuote() {
@@ -61,6 +129,8 @@ function changeCategory() {
 function changeFontSize() {
   const fontSize = document.getElementById("fontSize").value;
   document.getElementById("quoteText").style.fontSize = fontSize + "px";
+  document.getElementById("authorText").style.fontSize =
+    `${fontSize - 10}` + "px";
 }
 
 //dark mode

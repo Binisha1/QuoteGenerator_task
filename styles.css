@@ -59,7 +59,10 @@ i.quote-mark-left {
   font-family: "Caveat", cursive;
   margin: 10px;
 }
-
+.author {
+  font-size: 22px;
+  font-family: "Caveat", cursive;
+}
 .controls {
   display: flex;
   justify-content: space-between;
@@ -226,7 +229,7 @@ body.darkmode {
   .quote-container {
     padding: 10px;
     margin-bottom: 20px;
-    height: 240px;
+    height: 200px;
     width: 95%;
     box-shadow: 4px 4px 15px rgb(98, 98, 98);
   }
