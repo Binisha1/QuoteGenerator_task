@@ -21,6 +21,22 @@ const quotes = {
       text: "Computers are fast; developers keep them slow.",
       author: "Anonymous",
     },
+    {
+      text: "Confusion is part of programming.",
+      author: "Felienne Hermans",
+    },
+    {
+      text: "Fix the cause, not the symptom",
+      author: "Steve Maguire",
+    },
+    {
+      text: "First, solve the problem. Then write the code",
+      author: "John Johnson",
+    },
+    {
+      text: " If you optimize everything, you will always be unhappy",
+      author: "Donald Knuth",
+    },
   ],
   inspirational: [
     {
@@ -86,7 +102,7 @@ const quotes = {
       author: "Michael John Bobak",
     },
     {
-      text: "It’s hard to beat a person who never gives up.",
+      text: "It's hard to beat a person who never gives up.",
       author: " Babe Ruth",
     },
   ],
@@ -128,6 +144,7 @@ function changeCategory() {
 
 function changeFontSize() {
   const fontSize = document.getElementById("fontSize").value;
+
   document.getElementById("quoteText").style.fontSize = fontSize + "px";
   document.getElementById("authorText").style.fontSize =
     `${fontSize - 10}` + "px";
